@@ -1,0 +1,118 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Header Styles */
+header {
+    background-color: #1f3a93;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+.navigation li {
+    margin: 0 10px;
+}
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.navigation a:hover, .navigation a.active {
+    background-color: #f39c12;
+}
+
+/* Small-Screen Navigation */
+.navigation {
+    display: none;
+}
+#menu {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .navigation {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+/* Main Content Styles */
+main {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+h2 {
+    color: #1f3a93;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+}
+.card h3 {
+    background-color: #1f3a93;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.card.completed {
+    background-color: #d5f5e3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1f3a93;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 5px 0;
+}
