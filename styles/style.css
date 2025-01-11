@@ -94,7 +94,7 @@ h2 {
     flex: 1 1 calc(33% - 40px);
     max-width: calc(33% - 40px);
 }
-.card h3 {
+.card h2 {
     background-color: #1f3a93;
     color: white;
     padding: 10px;
