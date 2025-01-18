@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Thiago Gouveia">
+    <meta name="description" content="Pinole Chamber of Commerce. This aims to conduct business and services opportunities in Pinole, California. ">
+
+    <title>Pinole Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:url" content="https://github.com/GuinhoSensei/wdd230">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thaigo Gomes Gouveia - WDD 230 - Web Frontend Development">
+    <meta property="og:image" content="https://github.com/GuinhoSensei/wdd230/blob/main/images/Yo.jpg">
+</head> 
+
+<body>
+    <div id="content">
+       <header> 
+           <a id="logo_link" href="index.html">
+               <img class="logo" src="images/logo.png" alt="Pinole Logo">
+           </a>
+           <button id="hamburger"></button>
+           <nav>
+               <a href="index.html">Home</a>
+               <a href="discover.html">Events</a>
+               <a href="join.html">Contact Us</a>
+               <a href="directory.html">Directory</a>
+           </nav>
+           <div id="mode"> 🕶️</div>
+           
+       </header>
+   <div id="hero">
+       <div id="hero-box">
+           <img id="hero-img" src="images/hero.png" alt ="Pinole City Hall">
+   </div>
+   <section id="hero-msg">
+       <h1 class="home-title">Pinole Chamber of Commerce</h1>
+       <h4>Join the chamber today!</h4>
+       <div class="button-box">
+           <a class="book" href="join.html">Join Us</a>
+       </div>
+
+   </section>
+       </div>
+   <main class="home-grid">
+       <section class=" events-card">
+           <h2>Current Events</h2>
+           <img class="card-img" src="images/events.jpg" alt="Events happening now">
+            <h3>Summer at Fernandez Parks Series 2024!</h3>
+            <h4>Get Excited!</h4>
+            <p>Our Summer 2024 Movie and Concert Survey results are in,
+            and we are in full swing of preparing our Summer at Fernandez Park Series 2024.</p>
+           <div id="banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button onclick="closeBanner()">Close</button>
+        </div>
+        
+       </section>
+       <section class=" weather-card">
+        <h2>Weather</h2>
+           <div id="weather">
+            <!-- Weather data will be displayed here -->
+        </div>
+       </section>
+       
+       <section class="msg">
+           <h2>Spotlights</h2>
+           
+           <div class="container">
+            <div id="members-container" class="grid-view">
+            </div>
+        </div>
+           <a class='join' href="join.html">Join Us</a>
+       </section>
+
+   </main>
+   <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+   </footer>
+   <script src="scripts/getdates.js"></script>
+   <script src="scripts/hamburger.js"></script>
+   <script src="scripts/darkmode.js"></script>
+   <script src="scripts/windchill.js"></script>
+   <script src="scripts/weather.js"></script>
+   <script src="scripts/spotlight.js"></script>
+   </div>
+   </body>
+   </html>

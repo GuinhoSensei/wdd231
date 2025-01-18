@@ -1,0 +1,60 @@
+{
+    "members": [
+      {
+        "name": "Pear Street Bistro",
+        "address": "2395 San Pablo Ave, Pinole, California",
+        "phone": "510-741-8875",
+        "website": "https://pearstreetbistro.com",
+        "image": "pear.png",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "Bear Claw Bakery & Cafe",
+        "address": "2340 San Pablo Ave, Pinole, California",
+        "phone": "510-724-3105",
+        "website": "http://bearclawbakery.com",
+        "image": "bear.png",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Pinole Grove Senior Housing",
+        "address": "800 John St a113, Pinole, California",
+        "phone": "510-741-1900",
+        "website": "https://bridgehousing.com/properties/pinole-grove/",
+        "image": "bridge.png",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "AMF Pinole Valley Lanes",
+        "address": "1580 Pinole Valley Rd, Pinole, California",
+        "phone": "510-724-9130",
+        "website": "https://www.amf.com/location/amf-pinole-valley-lanes/",
+        "image": "amf.png",
+        "membership_level": "NP"
+      },
+      {
+        "name": "Security Public Storage",
+        "address": "2975 Pinole Valley Rd, Pinole, California",
+        "phone": "510-771-8593",
+        "website": "https://www.securitypublicstorage.com/locations/pinole?utm_source=GMBlisting&utm_medium=organic",
+        "image": "storage.png",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "Vallentyne woodworks",
+        "address": "2534 Carmelita Way, Pinole, California",
+        "phone": "925-357-0538",
+        "website": "https://www.vallentynewoodworks.com",
+        "image": "wood.png",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Orangetheory Fitness",
+        "address": "1400 Pinole Valley Rd, Pinole, California",
+        "phone": "510-777-0600",
+        "website": "https://www.orangetheory.com/en-us/locations/california/pinole/1400-pinole-valley-road/?utm_medium=seo&utm_source=gg&utm_term=tombras&utm_campaign=reputationdotcom--National",
+        "image": "orange.png",
+        "membership_level": "Bronze"
+      }
+    ]
+  }

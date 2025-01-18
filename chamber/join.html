@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Thiago Gouveia">
+    <meta name="description" content="Pinole Chamber of Commerce. This aims to conduct business and services opportunities in Pinole, California. ">
+
+    <title>Pinole Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:url" content="https://github.com/GuinhoSensei/wdd230">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thaigo Gomes Gouveia - WDD 230 - Web Frontend Development">
+    <meta property="og:image" content="https://github.com/GuinhoSensei/wdd230/blob/main/images/Yo.jpg">
+    <style>
+        /* Additional CSS for form layout */
+        .membership-levels {
+            float: right;
+            width: 40%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Pinole Logo">
+            </a>
+            <button id="hamburger"></button>
+            <nav>
+                <a href="index.html">Home</a>
+               <a href="discover.html">Events</a>
+               <a href="join.html">Contact Us</a>
+               <a href="directory.html">Directory</a>
+            </nav>
+            <div id="mode"> 🕶️</div>
+
+        </header>
+        
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.png" alt ="Pinole City Hall">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Pinole Chamber of Commerce</h1>
+            <h4>Join the chamber today!</h4>
+
+        <!-- Form -->
+        <main class="home-grid">
+            <form action="thankyou.html" method="get">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="title_position">Title/Position:</label>
+                <input type="text" id="title_position" name="title_position" required pattern="[a-zA-Z\s-]{7,}">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="business_name">Business/Organization Name:</label>
+                <input type="text" id="business_name" name="business_name" required>
+
+                <label for="membership_level">Membership Level:</label>
+                <select id="membership_level" name="membership_level" required>
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- Membership levels -->
+            <div class="membership-levels">
+                <h2>Membership Levels</h2>
+                <ul>
+                    <li>NP Membership: No fee, benefits tailored for non-profit organizations.</li>
+                    <li>Bronze Membership: Basic benefits.</li>
+                    <li>Silver Membership: Enhanced benefits.</li>
+                    <li>Gold Membership: Premium benefits.</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Pinole Logo">
+            </a>
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        document.getElementById("timestamp").value = Date.now();
+    </script>
+</body>
+
+</html>
