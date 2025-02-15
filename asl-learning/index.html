@@ -30,14 +30,25 @@
     <section id="flashcards">
         <h2>ASL Flashcards</h2>
         <div class="flashcard-container">
-            <!-- JavaScript will populate flashcards dynamically -->
+            <div class="flashcard" data-sign="hello">
+                <img src="images/hello.png" alt="ASL Hello">
+                <p>Hello</p>
+            </div>
+            <div class="flashcard" data-sign="thank you">
+                <img src="images/thank-you.png" alt="ASL Thank You">
+                <p>Thank You</p>
+            </div>
         </div>
     </section>
 
     <section id="vocabulary">
         <h2>ASL Vocabulary</h2>
         <ul id="vocabulary-list">
-            <!-- JavaScript will populate vocabulary dynamically -->
+            <li>Happy</li>
+            <li>Sad</li>
+            <li>Yes</li>
+            <li>No</li>
+            <li>Love</li>
         </ul>
     </section>
 
@@ -68,7 +79,11 @@
         <p>&copy; 2025 Learn ASL Hub. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        document.getElementById("start-quiz").addEventListener("click", function() {
+            document.getElementById("quiz-container").innerHTML = "<p>Quiz functionality coming soon!</p>";
+        });
+    </script>
 </body>
 
 </html>
