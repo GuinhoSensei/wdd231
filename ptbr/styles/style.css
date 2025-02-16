@@ -2,12 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
-    color: #333;
+    background-color: #6cdf71;
+    color: #bac5ba;
+    background-image: url(../images/brazil.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
-    background-color: #4A90E2;
+    background-color: #4a7ae2;
     color: white;
     text-align: center;
     padding: 1rem 0;
